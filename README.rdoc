@@ -1,3 +1,4 @@
 1. Create the App without Minitest Framework: rails new workout_app -T
 2. Install RSpec & Capybara
-
+3. Add Rspec Feature: Creating Home Page
+4. Add guard-rspec and spring-commands-rspec
