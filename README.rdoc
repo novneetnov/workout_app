@@ -6,3 +6,4 @@
 6. Add devise user model
 7. Create signup user feature spec
 8. Create signin user feature spec
+9. Create signout user feature spec
