@@ -28,7 +28,14 @@
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><%= link_to "Sign up", new_user_registration_path %></li>
+						<% if not user_signed_in? %>
+							<li><%= link_to "Sign up", new_user_registration_path %></li>
+							<li><%= link_to "Sign in", new_user_session_path %></li>
+						<% else %>
+							<div class="navbar-right">
+								<p class="navbar-text">Signed in as <%= current_user.email %></p>
+							</div>
+						<% end %>
 					</ul>
 				</div>
 			</div>
