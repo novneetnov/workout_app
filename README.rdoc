@@ -7,3 +7,4 @@
 7. Create signup user feature spec
 8. Create signin user feature spec
 9. Create signout user feature spec
+10. Add Devise Views
