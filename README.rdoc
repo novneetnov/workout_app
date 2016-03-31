@@ -2,3 +2,6 @@
 2. Install RSpec & Capybara
 3. Add Rspec Feature: Creating Home Page
 4. Add guard-rspec and spring-commands-rspec
+5. Add bootstrap-sass
+6. Add devise user model
+7. Create signup user feature spec

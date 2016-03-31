@@ -11,7 +11,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" 
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
 						data-target="#bs-example-navbar-collapse-1">
 						
 						<span class="icon-bar"></span>
@@ -20,18 +20,27 @@
 					</button>
 					<%= link_to "Athletes Den", root_path, class: "navbar-brand" %>
 				</div>
-				<div id="bs-example-navabr-collapse-1" class="navbar-collapse">
+				<div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active">
 							<%= link_to "Home", root_path %>
 							<span class="sr-only">(current)</span>
 						</li>
 					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><%= link_to "Sign up", new_user_registration_path %></li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
 	<div class="container">
+		<% flash.each do |name, msg| %>
+			<div class="alert alert-dismissible alert-<%= "#{name}" %>" role="alert">
+				<a href="#" class="close" data-dismiss="alert" aria-label="Close">&times;</a>
+				<%= content_tag :div, msg, id: "flash_#{name}" if msg.is_a?(String) %>
+			</div>
+		<% end %>
 		<%= yield %>
 	</div>
 
