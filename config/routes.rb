@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
 	
   devise_for :users
-  get 'dashboard/index'
-
+	get 'dashboard/index'
 	root "dashboard#index"
+
+	resources :users do
+		resources :exercises
+	end
 
 
   # The priority is based upon order of creation: first created -> highest priority.
