@@ -16,8 +16,8 @@ class ExercisesController < ApplicationController
 			if @exercise.save
 				format.html {redirect_to [current_user, @exercise], flash: { success: "Exercise has been created" } }
 			else
+				format.html {render :new}
 				flash[:danger] = "Exercise has not been created"
-				render :new
 			end
 		end
 	end

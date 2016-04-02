@@ -14,3 +14,9 @@
 		*	Will belong to users, there's no point in having exercises without users since users will be creating the workouts.
 		* Should have a new workout link to add them to users.
 		*	There should be a lounge area for the users once they login where they can see their exercises.
+13. Exercises Validations:
+		* Duration cannot be blank
+		* Workout Details cannot be blank
+		* Activity Date cannot be blank
+
+
