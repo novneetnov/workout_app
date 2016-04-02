@@ -36,6 +36,7 @@ gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
 gem 'devise', '~> 3.5', '>= 3.5.6'
+gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

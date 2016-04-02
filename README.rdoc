@@ -18,5 +18,4 @@
 		* Duration cannot be blank
 		* Workout Details cannot be blank
 		* Activity Date cannot be blank
-
-
+14. Add jquery-ui date-picker
