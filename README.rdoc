@@ -19,3 +19,4 @@
 		* Workout Details cannot be blank
 		* Activity Date cannot be blank
 14. Add jquery-ui date-picker
+15. Implement exercises listing feature spec and exercise listing page

@@ -11,4 +11,6 @@ class Exercise < ActiveRecord::Base
 			errors.add(:workout_date, "Must be a valid date format")
 		end
 	end
+
+	default_scope { where("workout_date > ?", 7.days.ago).order(workout_date: :desc) }
 end

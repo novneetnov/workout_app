@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$("#workout-date").datepicker();
+	$("#exercise_workout_date").datepicker();
 });
