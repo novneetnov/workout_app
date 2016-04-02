@@ -20,3 +20,8 @@
 		* Activity Date cannot be blank
 14. Add jquery-ui date-picker
 15. Implement exercises listing feature spec and exercise listing page
+16. Add workout graphs, to make the workout listing page more intuitive.
+		* 3rd party libraries added to vendor/assets/javascripts/:
+			+ morris.js and morris.css
+			+ raphael.js
+			+ turbolinks: page:change event
