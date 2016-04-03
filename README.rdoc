@@ -25,4 +25,5 @@
 			+ morris.js and morris.css
 			+ raphael.js
 			+ turbolinks: page:change event
-17. Add edit_exercise_spec and edit exercise feature.
+17. Add editing_exercise_spec and edit exercise feature.
+18. Add deleting_exercise_spec and delet exercise functionality.
