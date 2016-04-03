@@ -22,6 +22,19 @@ class ExercisesController < ApplicationController
 		end
 	end
 
+	def edit
+	end
+
+	def update
+		respond_to do |format|
+			if @exercise.update(exercise_params)
+				format.html {redirect_to [current_user, @exercise], flash: {success: "Exercise has been updated"}}
+			else
+				format.html {render :edit, flash: {danger: "Exercise has not been updated"}}
+			end
+		end
+	end
+
 	def show
 	end
 
