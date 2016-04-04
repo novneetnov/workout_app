@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 	has_many :exercises
 
+	validates :last_name, presence: true
+
 	def full_name
 		"#{first_name if !first_name.nil?} #{last_name}".strip
 	end

@@ -29,3 +29,4 @@
 18. Add deleting_exercise_spec and delet exercise functionality.
 19. List all the Users' full_name on the dashboard index page.
 20. Add first_name & last_name to users, extend registrations_controller
+21. Add Validations to User's First name, Last name, email
