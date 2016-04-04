@@ -1,13 +1,19 @@
 Rails.application.routes.draw do
 	
   devise_for :users, controllers: { registrations: 'registrations' }
-	get 'dashboard/index'
+	#get 'dashboard/index'
 	root "dashboard#index"
+
+	get 'dashboard/search', to: "dashboard#search", as: :search_dashboard
+	#resource :dashboard, only: [:index] do
+		#collection do
+			#post :search, to: "dashboard#search"
+		#end
+	#end
 
 	resources :users do
 		resources :exercises
 	end
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

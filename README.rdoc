@@ -31,3 +31,4 @@
 20. Add first_name & last_name to users, extend registrations_controller
 21. Add Validations to User's First name, Last name, email
 22. Add Pagination to users and customize with will_paginate-bootstrap
+23. Add athlete search facility in the navbar, define routes, controller action search.
