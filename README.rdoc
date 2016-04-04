@@ -27,3 +27,4 @@
 			+ turbolinks: page:change event
 17. Add editing_exercise_spec and edit exercise feature.
 18. Add deleting_exercise_spec and delet exercise functionality.
+19. List all the Users' full_name on the dashboard index page.
