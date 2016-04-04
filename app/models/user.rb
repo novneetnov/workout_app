@@ -6,6 +6,6 @@ class User < ActiveRecord::Base
 	has_many :exercises
 
 	def full_name
-		"#{first_name if !first_name.nil?} #{last_name}".strip!
+		"#{first_name if !first_name.nil?} #{last_name}".strip
 	end
 end
