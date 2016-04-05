@@ -10,7 +10,8 @@ class FriendshipsController < ApplicationController
 	end
 
 	def show
-
+		@friend = User.find(params[:id])
+		@friend_exer = @friend.exercises.all
 	end
 
 	def destroy
