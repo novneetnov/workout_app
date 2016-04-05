@@ -37,3 +37,4 @@
 26. Add User has_many friendships, User has_many friends through friendships, class_name: "User"
 27. Check if a user is already a friend by follows_or_same? method.
 28. Friendships Controller, create method.
+29. Implement Display Friends

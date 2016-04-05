@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 	validates :last_name, presence: true
 	has_many :friendships
 	has_many :friends, through: :friendships, class_name: "User"
-	self.per_page = 4
+	self.per_page = 10
 
 	def full_name
 		"#{first_name if !first_name.nil?} #{last_name}".strip
