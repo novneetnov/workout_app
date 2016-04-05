@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 	has_many :exercises
 	validates :last_name, presence: true
+	has_many :friendships
+	has_many :friends, through: :friendships, class_name: "User"
 	self.per_page = 4
 
 	def full_name
@@ -21,4 +23,7 @@ class User < ActiveRecord::Base
 		end
 	end
 
+	def follows_or_same?(new_friend)
+		self.friends.include?(new_friend) or self == new_friend
+	end
 end
