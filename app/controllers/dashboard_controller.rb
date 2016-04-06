@@ -5,7 +5,7 @@ class DashboardController < ApplicationController
 	end
 
 	def search
-		@athletes = User.search_by_name(params[:search_name]).paginate(page: params[:page], per_page: 3)
+		@athletes = User.search_by_name(params[:search_name]).paginate(page: params[:page], per_page: 5)
 	end
 
 end
