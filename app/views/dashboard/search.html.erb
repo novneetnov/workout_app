@@ -6,7 +6,7 @@
 				<% if user_signed_in? %>
 					<%= link_to "Follow", friendships_path(friend_id: athlete.id), 
 												method: :post, 
-											  class: "btn btn-primary pull-right" unless current_user.follows_or_same?(athlete) %>	
+											  class: "btn btn-primary pull-right vcenter" unless current_user.follows_or_same?(athlete) %>	
 				<% end %>
 
 			</div>

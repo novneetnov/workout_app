@@ -4,6 +4,7 @@
 
 body {
 	padding-top: 72px;
+	background-color: white;
 }
 
 .alert-error {
@@ -38,4 +39,8 @@ body {
 #error_explanation {
 	padding: 15px 15px 15px 30px;
 	margin-bottom: 30px;
+}
+
+#chart {
+	background-color: #d2f7f3;
 }

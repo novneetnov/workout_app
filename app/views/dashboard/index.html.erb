@@ -13,7 +13,7 @@
 <div class="row">
 	<% @athletes.each do |athlete| %>
 		<div class="col-md-10">
-			<div class="well member">
+			<div class="well member vcenter">
 				<%= athlete.full_name %>
 				<% if user_signed_in? %>
 					<%= link_to "Follow", friendships_path(friend_id: athlete.id), 
