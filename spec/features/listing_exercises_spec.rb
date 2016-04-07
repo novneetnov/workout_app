@@ -21,6 +21,13 @@ RSpec.feature "Listing Exercises" do
 		expect(page).to have_content(@e2.duration_in_min)
 		expect(page).to have_content(@e2.workout)
 		expect(page).to have_content(@e2.workout_date)
+
+		expect(page).to have_link("Show")
+		expect(page).to have_link("Edit")
+		expect(page).to have_link("Delete")
+		click_link("Show", href: user_exercise_path(@john, @e1))
+		expect(current_path).to eq(user_exercise_path(@john, @e1))
+
 	end
 
 	scenario "Shows a list of current_user's friends" do
