@@ -9,6 +9,7 @@ as per your needs.
 
 ### Gems/third party libraries for the app:   
 1. [RSpec](http://rspec.info/) & [Capybara](https://github.com/jnicklas/capybara): The App was developed according to BDD principles. This was my first attemp to do so.  
+2. [Guard-Rspec](https://github.com/guard/guard-rspec): For automated testing, one of the coolest gem
 2. [Devise](https://github.com/plataformatec/devise) gem: For signing users up. Devise was also customized to add "first name" and "last name"   
 3. [Bootstrap-sass](https://github.com/twbs/bootstrap-sass) was used to style the app.  
 4. [JQuery-UI Rails](https://github.com/joliss/jquery-ui-rails) was used for date picker while creating and editing workouts.
