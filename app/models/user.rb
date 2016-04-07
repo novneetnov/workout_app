@@ -3,10 +3,10 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-	has_many :exercises
+	has_many :exercises, dependent: :destroy
 	validates :last_name, presence: true
-	has_many :friendships
-	has_many :friends, through: :friendships, class_name: "User"
+	has_many :friendships, dependent: :destroy
+	has_many :friends, through: :friendships, class_name: "User", dependent: :destroy
 	self.per_page = 10
 
 	def full_name
