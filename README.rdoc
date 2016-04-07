@@ -40,7 +40,6 @@
 29. Implement Display Friends
 30. Implement un-follow friends feature
 31. Friend's Exercises Show Link not working
-ToDo:
 32. Show Follow Button of Friend's Friends, who I don't follow.
 33. Show "You are Following" in the friends who you follow.
 34. Restrict showing exercises of people who you don't follow.
