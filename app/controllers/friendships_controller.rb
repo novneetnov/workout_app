@@ -15,8 +15,12 @@ class FriendshipsController < ApplicationController
 		if current_user.friends.include?(@friend)
 			@friend_exer = @friend.exercises.all
 		else
-			redirect_to :back
-			flash[:danger] = "You must follow #{@friend.full_name} before that action"
+			if current_user == @friend
+				redirect_to user_exercises_path(current_user)
+			else 
+				redirect_to :back
+				flash[:danger] = "You must follow #{@friend.full_name} before that action"
+			end
 		end
 	end
 
