@@ -37,6 +37,8 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 
+gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
