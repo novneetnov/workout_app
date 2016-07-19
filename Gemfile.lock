@@ -48,6 +48,12 @@ GEM
       sass (>= 3.3.4)
     builder (3.2.2)
     byebug (8.2.2)
+    capistrano (2.15.8)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     capybara (2.6.2)
       addressable
       mime-types (>= 1.16)
@@ -93,6 +99,7 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    highline (1.7.8)
     i18n (0.7.0)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -120,6 +127,13 @@ GEM
     minitest (5.8.4)
     multi_json (1.11.2)
     nenv (0.3.0)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (3.1.1)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     notiffany (0.0.8)
@@ -240,6 +254,7 @@ DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass
   byebug
+  capistrano
   capybara
   coffee-rails (~> 4.1.0)
   devise (~> 3.5, >= 3.5.6)
