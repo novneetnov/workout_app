@@ -1,8 +1,16 @@
+require 'bundler/capistrano'
+
 set :user, "novneet"
-set :application, "workout_app_deploy"
+set :application, "workout-app-deploy"
 set :domain, "workout.localhost.com"
 
-set :repository, "https://github.com/novneetnov/workout_app"
+set :rvm_type, :user
+#set :rvm_ruby_string, 'ruby 2.2.3p173'
+set :rvm_ruby_string, :local
+require 'rvm/capistrano'
+
+#set :repository, "https://github.com/novneetnov/workout-app"
+set :repository, "/home/#{user}/web_development/deployment/#{application}"
 set :deploy_to, "/home/#{user}/web_development/deployment/#{application}"
 
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
