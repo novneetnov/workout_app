@@ -1,4 +1,4 @@
-$(document).on("page:change", function() {
+$(document).on("turbolinks:load", function() {
 	$("#exercise_workout_date").datepicker( { dateFormat: 'yy-mm-dd' });
 	
 	new Morris.Line({
