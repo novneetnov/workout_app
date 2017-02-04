@@ -36,11 +36,20 @@ set :rails_env, :production
 namespace :deploy do
 	desc "Restart Passenger after deploy"
 	task :restart, :roles => :app, :except => { :no_release => true } do
-	 run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+		 run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
 	end
+
 	desc "reload the database with seed data"
 	task :seed do
 		deploy.migrations
-		run "cd #{current_path}; rake db:seed RAILS_ENV=#{rails_env}"
+		run "cd #{current_path}; bundle exec rake db:seed RAILS_ENV=#{rails_env}"
+	end
+
+	namespace :db do
+		desc "drop, recreate and seed the database"
+		task :setup do
+			deploy.migrations
+			run "cd #{current_path}; bundle exec rake db:setup RAILS_ENV=#{rails_env}"
+		end
 	end
 end
